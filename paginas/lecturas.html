@@ -18,8 +18,15 @@
         </nav>
           <h1 class="titulo">Lecturas</h1>
       </header>
+      <section>
+        <h3>¿Qué es HTML?</h3>
+        <p>HTML es un lenguaje de etiquetas utilizado para
+          el desarrollo de páginas web. Este lenguaje es
+          interpretado por el buscador por ejemplo Firefox, Opeta y Google Chrome.</p>
 
-<section>
+      </section>
+
+<section class="mitadIzquierda">
   <h3>Estructura básica de una página con HTML5</h3>
 
   <xmp class = "codigo"><!DOCTYPE html>
@@ -36,9 +43,76 @@
 <p>Es importante definir el documento como !DOCTYPE html,
   y darle un tipo de codificación ya sea "utf-8" u otro tipo,
    también debemos darle un título al documento y crear
-   la etiqueta body donde ira el contenido de la pagina.</p>
+   la etiqueta body donde ira el contenido de la página.</p>
+   <h4>Explicación de las etiquetas principales</h4>
+
+
+   <p><em>!DOCTYPE html: </em> Define la página en que se encuentra como HTML5.</p>
+
+
+   <p> <em>html: </em>Esta etiqueta permite definir el contenido dentro como HTML.</p>
+
+
+   <p><em>head: </em>Contiene la información princiapal del documento, como el título, el
+     tipo de codificación, scripts y estilos.</p>
+
+
+     <p><em>body: </em>Contiene el contenido principal de la página, como, el texto que
+       aparecerá en pantalla del usuario, videos, audio, etc</p>
 </section>
 
+<section id="buenasPracticas">
+
+<h3>Buenas Practicas HTML5</h3>
+
+<p>HTML5 introdujo nuevos etiquetas que permiten entender
+la utilidad el objetivo de un elemento, algunas de etiquetas son header, nav, section article,
+aside y footer. Usando estas etiquetas podremos dar  un mejor entendimiento de los elementos que
+creamos ademas permite a otras personas entender, la estructura del documento de manera más sencilla.</p>
+<xmp class = "codigo"><!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Titulo</title>
+    </head>
+    <body>
+
+      <header>
+        Contenido
+        de introducción.
+      </header>
+
+      <nav>
+        Enlaces de
+        navegación.
+      </nav>
+
+      <section>
+        Grupo de contenido
+        un tema en específico.
+      </section>
+
+      <article>
+        Cotenido
+        indpendiente de
+        otros.
+      </article>
+
+    <aside>
+      Contenido que va
+      a lado de otro.
+    </aside>
+
+    <footer>
+      Información
+      de empresa o
+      persona
+    </footer>
+
+    </body>
+  </html>
+</xmp>
+</section>
 
   </body>
 </html>

@@ -30,7 +30,7 @@ header nav ul li{
 
 }
 .codigo{
-  background-color:#747d8c;
+  background-color: #f0f0f5;
   max-width: 90%;
   overflow: auto;
 }
@@ -38,15 +38,15 @@ header nav ul li{
   width: 50%;
   float: left;
   min-width: 50%;
-
+  margin-right: 5px;
 }
 #video{
   float: left;
 }
-#buenasPracticas{
+.mitadDerecha{
   float: left;
   width: 45%;
-  min-width: 45%
+  min-width: 45%;
 }
 .separar{
   clear: both;

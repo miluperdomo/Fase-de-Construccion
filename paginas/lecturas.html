@@ -21,8 +21,8 @@
           <ol>
             <li><a href="#lecturaGit">Git</a></li>
             <li><a href="#lecturaGithub">Github</a></li>
-            <li><a href="#lecturaHTML">HTML</a></li>
-            <li><a href="#lecturaCSS">CSS</a></li>
+            <li><a href="#lecturaHTML">HTML5</a></li>
+            <li><a href="#lecturaCSS">CSS3</a></li>
           </ol>
       </header>
 
@@ -33,6 +33,17 @@
         <h4>¿Qué es Git?</h4>
         <p>Git es programa open source que permite el control de versiones de manera local.
         </p>
+        <h4>Instalación y uso</h4>
+        <p>En este enlace se descarga Git para diferentes sistemas operativos: <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a>
+        se siguen las instrucciones básicas de instalación, , cuando el programa este instalado aparecerá una aplicación llamada Git Bash, en donde se pondrán los comandos
+        que se usaran parar manejar los repositorios, algunos de los comandos básicos son: </p>
+        <ul>
+          <li><em>git init: </em>Crea un repositorio de manera local.</li>
+          <li><em>git clone: </em>Crea una copia de un repositorio local o web dando el URL.</li>
+          <li><em>git add: </em>Agrega uno o varios archivos al repositorio actual.</li>
+          <li><em>git commit: </em>Realiza los cambios realizados al repositorio, ya sea de manera local o web, con una descripción.</li>
+        </ul>
+        <p>Para más información visitar la documentación de Git <a href="https://git-scm.com/docs/" target="_blank">https://git-scm.com/docs/</a></p>
       </section>
 
       <hr>
@@ -42,13 +53,18 @@
         <h4>¿Qué es Github?</h4>
         <p>Github es una plataforma web y desktop que permite el control de distintas versiones mediante repositorios web.
          </p>
+           <h4>Instalación y uso</h4>
+           <p>En el enlace <a href="https://github.com/" target="_blank">https://github.com/</a> se crea una cuenta en donde estarán los repositorios que se creen,
+             el manejo de estos repositorios se puede hacer de manera local con Git y la aplicación de Github para escritorio la cual se encuentra en el enlace
+             <a href="https://desktop.github.com/" target="_blank">https://desktop.github.com/</a>
+             o también se pueden manejar los repositorios de manera web. </p>
       </section>
 
       <hr>
 
       <sectionid id="lecturaHTML">
-        <h3>HTML</h3>
-        <h4>¿Qué es HTML?</h4>
+        <h3>HTML5</h3>
+        <h4>¿Qué es HTML5?</h4>
         <p>HTML es un lenguaje de etiquetas utilizado para
           el desarrollo de páginas web. Este lenguaje es
           interpretado por el buscador por ejemplo Firefox, Opeta y Google Chrome.</p>
@@ -90,7 +106,7 @@
        aparecerá en pantalla del usuario, videos, audio, etc</p>
 </section>
 
-<section id="buenasPracticas">
+<section class=".mitadDerecha">
 
 <h3>Buenas Practicas HTML5</h3>
 
@@ -146,11 +162,75 @@ creamos además permite a otras personas entender, la estructura del documento d
 <hr class= "separar">
 
 <section id= "lecturaCSS">
-<h3>CSS</h3>
-<h4>¿Qué es CSS?</h4>
-<p>Es un lenguaje de estilos que permite controlar y modificar las características de todos los elementos
-  en una página web.
-</p>
+  <h3>CSS3</h3>
+  <h4>¿Qué es CSS3?</h4>
+  <p>Es un lenguaje de estilos que permite controlar y modificar las características de todos los elementos
+    en una página web.
+  </p>
+  <section class="mitadIzquierda">
+    <h4>Uso de CSS3</h4>
+    <p>En un archivo HTML se incluye de la debajo de la etiqueta head, el enlace con el archivo ".css". Ejemplo:
+      </p>
+      <xmp class = "codigo"><!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>Titulo</title>
+            <link rel="stylesheet" href="css/estilo.css">
+          </head>
+        </html>
+    </xmp>
+
+    <h4>Como identificar un elemento</h4>
+    <p>Para modificar un elemento primero se debe identificar, ya sea por el nombre de la etiqueta que se encuentra,
+      o por una clase o id. Ejemplo:</p>
+
+    <h5>Archivo HTLM</h5>
+    <xmp class="codigo">
+      <h3 id = "saludo">Hola a todos</h3>
+      <p class="mensaje">Aprender CSS es de mucha utilidad.</p>
+    </xmp>
+
+    <h5>Archivo CSS</h5>
+    <xmp class="codigo">
+      #saludo{
+        /*
+        Cambios de estilo
+        */
+      }
+      .mensaje{
+        /*
+        Cambios de estilo
+        */
+      }
+
+    </xmp class="codigo">
+  </section>
+
+  <section class="mitadDerecha">
+  <h4>Modificar un las propiedades de un elemento</h4>
+  <p>Un elemento en un documento HTML tiene diferentes propiedades que
+     se pueden modificar como el tamaño, la posición, y tipo de letra, el color fondo, el borde, la visibilidad, etc.
+    Para obtener una lista detalla de características modificables, visitar este enlace
+    <a href="https://www.w3schools.com/cssref/" target="_blank">https://www.w3schools.com/cssref/</a> Ejemplo:
+   </p>
+  <h5>Archivo CSS</h5>
+  <xmp class="codigo">
+    body{
+      background-color: #000;
+      font-size: 2em;
+    }
+
+    #saludo{
+      text-align: center;
+    }
+
+    .mensaje{
+      border-style: dotted;
+    }
+  </xmp>
+
+  </section>
 </section>
 
   </body>

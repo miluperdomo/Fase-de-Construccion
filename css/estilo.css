@@ -39,6 +39,7 @@ header nav ul li{
   float: left;
   min-width: 50%;
   margin-right: 5px;
+  background-color: rgb
 }
 #video{
   float: left;
@@ -50,4 +51,16 @@ header nav ul li{
 }
 .separar{
   clear: both;
+}
+.autores{
+  padding: 5px;
+  border-style: solid;
+  width: 250px;
+  text-align: center;
+  background-color: #627087;
+}
+#cuadroColores{
+  background-color: #000;
+  width: 120px;
+  height: 120px;
 }
